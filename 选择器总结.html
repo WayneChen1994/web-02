@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>选择器总结</title>
+</head>
+<body>
+        1、标签选择器
+        所有的标记/标签，都可以作为标签选择器，一般情况下不单独使用，重置样式时除外
+        例如：
+        p{
+                width: 200px;
+                height: 200px;
+        }
+        
+        2、class选择器
+        使用class选择器，需要在css中声明，使用"."声明，并且还需要在html中引用
+        例如：
+        .box{
+                width: 200px;
+                height: 200px;
+        }
+        <div class="box"></div>
+        
+        3、id选择器
+        使用id选择器，需要在css中声明，使用“#”进行声明，并且不能使用关键字命名，也需要在html中引用
+        例如：
+        #box{
+                width: 200px;
+                height: 200px;
+        }
+        <div id="box"></div>
+
+        4、通配符
+        代表选中所有的标签，一般用于重置样式
+        *{
+                margin: 0;
+                padding: 0;
+        }
+
+        5、属性选择器
+        选择器[属性名="属性值"]{
+                width: 200px;
+                height: 200px;
+        }
+
+        6、包含选择器
+        选择器与选择器之间用空格隔开
+        包含选择器，必定要有包含的关系，此选择器会选中所有符合条件的子标签
+        父选择器 子选择器{
+                width: 200px;
+                height: 200px;
+        }
+
+        7、父子选择器
+        子类选择器，是包含选择器的一种，与包含选择器不同的是，它只选中它下一层的子标签
+        父选择器>子选择器{
+                width: 200px;
+                height: 200px;
+        }
+
+        8、伪类选择器
+        选择器:事件
+        例如：
+        a:hover{
+                background: red;
+        }
+
+        9、结构选择器
+        例如：
+        选择器:nth-child(n)    选中第n个匹配的
+        选择器:first-child         选中第一个
+        选择器:last-child          选中最后一个
+        选择器:nth-child(2n)       选中偶数
+        选择器:nth-child(2n+1/2n-1)     选中奇数
+
+        10、群组选择器
+        选择器与选择器之间使用“,”隔开
+        选择器1,选择器2,……,选择器n{
+                width: 200px;
+                height: 200px;
+        }
+</body>
+</html>

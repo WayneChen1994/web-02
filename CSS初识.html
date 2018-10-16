@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>CSS初识</title>
+        
+        css的作用：
+        使标签与样式分离，提高代码的复用性，还可以便于后期维护
+        层叠：
+        当我们使用不同的方式给html添加不同的样式的时候，最后显示效果，
+        是所有的样式层叠在一起作用于同一个标签的结果
+        
+        选择器：
+        1、一般情况下，不单独使用，重置样式时除外。
+        
+        <style type="text/css">
+                /* 通配符“*”，代表选中所有的标签 */
+                *{
+                        /* 外边距 */
+                        margin: 0;
+                        /* 内边距 */
+                        padding: 0;
+                }
+                div{
+                        width: 200px;
+                        height: 200px;
+                }
+                .box{
+                        background-color: yellow;
+                }
+                /* 属性选择器 格式：选择器名[属性名=属性值]*/
+                /*input[type="submit"]{*/
+                        /*width: 200px;*/
+                        /*height: 30px;*/
+                /*}*/
+                .in[value="按钮"]{
+                        width: 100px;
+                        height: 50px;
+                }
+        </style>
+</head>
+<body>
+        <div class="box">
+                <form action="#" method="post">
+                        <input class="in" type="button" value="按钮" />
+                        <input class="in" type="submit" value="提交" />
+                </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+</head>
+<body>
+        表单的作用：提交数据到服务器
+        action：表单提交的位置
+        method：提交方式 post/get
+        <form action="" method="post">
+                <!--type:text   文本框-->
+                <!-- name：名字 -->
+                <!-- id：唯一标识 -->
+                <!-- value：输入框的内容 -->
+                <!-- placeholder：文本提示 -->
+                <input type="text" name="" id="" value="" placeholder="用户名"/>
+                <input type="text" name="" id="" value="用户名" />
+                <!-- type:password      密码框 -->
+                <input type="password" name="" id="" value="" placeholder="密码">
+                
+                <!-- type:color         颜色拾取器 -->
+                <input type="color" name="" id="" value="" />
+                <!-- type:date          日历 -->
+                <input type="date" name="" id="" value="" />
+                <!-- type:file          选取文件 -->
+                <input type="file" name="" id="" value="" />
+                <br/>
+                
+                爱好：
+                <!-- type:checkbox      多选框，注意：同一组的name要相同 -->
+                <!-- checked：默认选中 -->
+                <input type="checkbox" name="hobby" id="" value="" checked="checked"/>睡觉
+                <input type="checkbox" name="hobby" id="" value="" />吃饭
+                <input type="checkbox" name="hobby" id="" value="" />敲代码
+                <input type="checkbox" name="" id="" value="" />运动
+                <br />
+                
+                性别：
+                <!-- type:radio         单选按钮，同一组name必须相同 -->
+                <input type="radio" name="sex" id="" value="" />男
+                <input type="radio" name="sex" id="" value="" />女
+                <input type="radio" name="sex" id="" value="" />人妖
+                <input type="radio" name="sex" id="" value="" />伪娘
+                <br />
+                
+                <!-- type:email         邮箱 -->
+                <input type="email" name="" id="" value="" />
+                <!-- type:number      数字框  -->
+                <input type="email" name="" id="" value="" />
+        
+                <!-- 下拉框，select与option要一起连用 -->
+                <select>
+                        <option>星期一</option>
+                        <option>星期二</option>
+                        <option>星期三</option>
+                </select>
+        
+                <!-- 文本域 cols：规定字符列数    rows：规定字符行数 -->
+                <textarea cols="100" rows="5">文本域</textarea>
+                
+                <!-- type:button        普通按钮-->
+                <input type="button"  name="" id="" value="按钮"/>
+                <!-- type:reset         重置按钮，将表单中的文本内容清空 -->
+                <input type="reset" name="" id="" value="重置按钮" />
+                <!--type:submit   提交按钮-->
+                <input type="submit" value="提交" />
+        </form>
+</body>
+</html>

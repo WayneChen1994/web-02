@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>CSS与HTML的结合</title>
+        <!-- type：文件类型 href：文件地址 -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style type="text/css">
+                body{
+                        background: green;
+                }
+        </style>
+</head>
+<body>
+        1、内联样式
+        每一个HTML标签都有一个style属性，我们可以通过style属性给标签设置样式。
+        
+        2、内部样式
+        通过style标签将样式与html标签进行结合，这种方式我们称之为内部样式，建议style标签写在head头部，以防发生样式错乱。
+        
+        3、外部样式
+        首先我们需要创建一个css文件，然后通过link标签将css文件与html文件进行结合。
+        
+        注意：无论是style标签或者是使用link，我们都可以写多个，并且这两种我们可以同时使用。
+        
+        当这三个同时存在的情况下，我们同时选中同一个标签，给了它相同的属性，但是不同的属性值，这时候，这个标签表现出的样式应该以谁为准？换句话说就是这三种结合方式的优先级？
+        
+        内联样式的优先级最高，内部样式与外部样式优先级相同，当内部样式与外部样式出现相同属性的时候，后面的会将前面的给覆盖掉。
+
+</body>
+</html>

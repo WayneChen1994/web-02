@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>选择器权重</title>
+        <style type="text/css">
+                body{
+                        color: fuchsia;
+                        font-size: 12px;
+                }
+                div{
+                        width: 100px;
+                        height: 100px;
+                        background: yellow;
+                }
+                .box{
+                        background: palegreen;
+                }
+                .box:hover{
+                        background: red;
+                }
+        </style>
+</head>
+<body>
+        <div class="box" id="div1">
+                123123
+        </div>
+        
+        选择器权重：
+        1、最高内联样式 1000
+        2、id选择器 100
+        3、类选择器/伪类选择器/属性选择器 10
+        4、标签选择器 1
+        5、通配符 0
+        6、群组选择器，权重是各个选择器自己本身权重
+        7、包含选择器权重，是所有选择器权重之和
+
+        选择器权重的作用：
+        当一个标签被不同的选择器选中的时候，并且这几个不同的选择器拥有相同的属性的时候，优先显示权重高的样式，若权重相同，则显示后写的那个样式。
+        
+        注意：
+        1、!important声明的样式优先级最高，如果冲突再进行计算
+        2、如果优先级相同，则选择最后出现的样式
+        3、继承得到的优先级最低
+        
+</body>
+</html>

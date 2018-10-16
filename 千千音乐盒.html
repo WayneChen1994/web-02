@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>千千音乐盒</title>
+        <style type="text/css">
+                *{
+                        margin: 0;
+                        padding: 0;
+                }
+                a{
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: white;
+                }
+                a:hover{
+                        color: yellow;
+                }
+                .box{
+                        width: 1369px;
+                        height: 696px;
+                }
+                .topbar{
+                        height: 44px;
+                        background-color: red;
+                        color: white;
+                }
+                .topbar>img{
+                        width: 134px;
+                        height: 44px;
+                        float: left;
+                }
+                #leftpic,#rightpic{
+                        width: 178px;
+                        height: 570px;
+                }
+                #centerpic{
+                        width: 1013px;
+                        height: 570px;
+                }
+                .content>img{
+                        display: block;
+                        float: left;
+                }
+                .topbar>form{
+                        display: inline;
+                        float: left;
+                        line-height: 44px;
+                        margin-left: 30px;
+                }
+                .topbar>form>input{
+                        color: white;
+                        border: 1px solid white;
+                        border-radius: 10px;
+                        background-color: red;
+                }
+                ul{
+                        display: inline;
+                        float: right;
+                        line-height: 44px;
+                }
+                ul li{
+                        display: inline-block;
+                        margin-right: 20px;
+                }
+        </style>
+</head>
+<body>
+        <div class="box">
+                <div class="topbar">
+                        <img src="img/logo.png">
+                        <form action="#" method="get">
+                                <input type="text" name="songsearch" value="" placeholder="输入歌曲、歌手、专辑名">
+                        </form>
+                        <ul style="list-style: none">
+                                <li><a href="#">最潮歌曲</a> </li>
+                                <li><a href="#">粤语老歌</a> </li>
+                                <li><a href="#">拯救不开心</a> </li>
+                                <li><a href="#">陈洁仪</a> </li>
+                                <li><a href="#">进击的巨人</a> </li>
+                                <li><a href="#">天秤座</a> </li>
+                                <li><a href="#">爵士四人行</a> </li>
+                                <li><a href="#">助眠神曲</a> </li>
+                                <li><a href="#">伍佰...</a> </li>
+                                <li><a href="#"></a> </li>
+                                <li><a href="#"></a> </li>
+                                <li><a href="#">登录</a> </li>
+                                <li><a href="#">注册</a> </li>
+                                <li><a href="#">开通VIP</a> </li>
+                                <li><a href="#">换肤</a> </li>
+                                <li><a href="#">反馈</a> </li>
+                                <li><a href="#">首页</a> </li>
+                        </ul>
+                </div>
+                <div class="content">
+                        <img src="img/left.png" id="leftpic">
+                        <img src="img/center.png" id="centerpic">
+                        <img src="img/right.png" id="rightpic">
+                </div>
+                <div class="footer">
+                        <img src="img/foot.png">
+                </div>
+        </div>
+</body>
+</html>
